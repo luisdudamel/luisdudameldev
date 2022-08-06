@@ -24,6 +24,13 @@ const MainStyled = styled.div`
   .loading-dot:nth-child(3) {
     animation-delay: 500ms;
   }
+
+  .social-icons {
+    margin-top: 20px;
+    &--icon {
+      margin: 0 10px;
+    }
+  }
 `;
 
 export default MainStyled;
