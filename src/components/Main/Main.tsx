@@ -3,7 +3,12 @@ import MainStyled from "./MainStyled";
 const Main = (): JSX.Element => {
   return (
     <MainStyled>
-      <h1>IN DEVELOPMENT..</h1>
+      <h1>
+        In development
+        <span className="loading-dot">.</span>
+        <span className="loading-dot">.</span>
+        <span className="loading-dot">.</span>
+      </h1>
     </MainStyled>
   );
 };
