@@ -9,6 +9,10 @@ const MainStyled = styled.div`
   h1 {
     color: white;
   }
+  .social-icons {
+    color: white;
+    font-size: 40px;
+  }
 
   @keyframes blink {
     50% {
