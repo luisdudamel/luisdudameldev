@@ -9,7 +9,6 @@ const Main = (): JSX.Element => {
         <span className="loading-dot">.</span>
         <span className="loading-dot">.</span>
       </h1>
-      <p>Testing develop</p>
       <div className="social-icons">
         {`<`}
         <a href="https://github.com/luisdudamel">
