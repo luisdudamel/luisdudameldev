@@ -1,2 +1,2 @@
 /barkedin/* https://barkedin.netlify.app/:splat 200
-/google_test https://www.google.com:splat 200
+/* /index.html 200
