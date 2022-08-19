@@ -35,6 +35,10 @@ const MainStyled = styled.div`
       margin: 0 10px;
     }
   }
+  .lottie {
+    width: 500px;
+    height: 300px;
+  }
 `;
 
 export default MainStyled;

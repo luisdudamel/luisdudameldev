@@ -1,14 +1,18 @@
 import MainStyled from "./MainStyled";
+import Lottie from "lottie-react";
+import * as json from "../../lottie.json";
 
 const Main = (): JSX.Element => {
   return (
     <MainStyled>
+      <Lottie className="lottie" animationData={json}></Lottie>
       <h1>
         In development
         <span className="loading-dot">.</span>
         <span className="loading-dot">.</span>
         <span className="loading-dot">.</span>
       </h1>
+
       <div className="social-icons">
         {`<`}
         <a href="https://github.com/luisdudamel">
