@@ -5,39 +5,64 @@ const MainStyled = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  h1 {
-    color: white;
-  }
-  .social-icons {
-    color: white;
-    font-size: 40px;
-  }
+  min-height: 100vh;
 
-  @keyframes blink {
-    50% {
-      color: transparent;
+  .hero {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &-headings {
+      display: flex;
+      flex-direction: column;
+      &-subname {
+        color: #55b5fa;
+        margin-bottom: 0;
+        font-size: 2rem;
+      }
+      &-name {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 8rem;
+        color: white;
+      }
     }
   }
-  .loading-dot {
-    animation: 1s blink infinite;
-  }
-  .loading-dot:nth-child(2) {
-    animation-delay: 250ms;
-  }
-  .loading-dot:nth-child(3) {
-    animation-delay: 500ms;
-  }
+  @media (min-width: 350px) {
+    .hero {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
 
-  .social-icons {
-    margin-top: 20px;
-    &--icon {
-      margin: 0 10px;
+      &-headings {
+        display: flex;
+        flex-direction: column;
+        &-subname {
+          color: #55b5fa;
+          margin-bottom: 0;
+          font-size: 2rem;
+        }
+        &-name {
+          margin-top: 0;
+          margin-bottom: 0;
+          font-size: 3rem;
+          color: white;
+        }
+      }
     }
   }
-  .lottie {
-    width: 500px;
-    height: 300px;
+  .bio {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    &-profile-picture {
+      border-radius: 3rem;
+      margin: 2rem;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
   }
 `;
 
