@@ -4,6 +4,7 @@ export const HeroStyled = styled.section`
   padding: 0px 30px;
   text-align: left;
   min-height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
