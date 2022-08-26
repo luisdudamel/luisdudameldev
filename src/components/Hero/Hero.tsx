@@ -1,20 +1,28 @@
-import { Dot, HeroStyled, Name } from "./HeroStyled";
+import {
+  HeroDot,
+  HeroStyled,
+  HeroName,
+  HeroSubhead,
+  HeroText,
+  HeroTitle,
+} from "./HeroStyled";
 
 const Hero = (): JSX.Element => {
   return (
     <>
       <HeroStyled>
-        <p className="hero_subheading">Hi, I'm</p>
-        <Name>
-          Luis Dudamel<Dot>.</Dot>
-        </Name>
-        <h2 className="hero_title">
+        <HeroSubhead>Hi, I'm</HeroSubhead>
+        <HeroName>
+          Luis Dudamel<HeroDot>.</HeroDot>
+        </HeroName>
+        <HeroTitle>
           I create stuff <br /> for the web
-        </h2>
-        <p className="hero_text">
+        </HeroTitle>
+
+        <HeroText>
           I'm a software engineer, who loves to find new ways of solving
           problems while building great digital experiences.
-        </p>
+        </HeroText>
       </HeroStyled>
     </>
   );
