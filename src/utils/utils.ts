@@ -1,0 +1,18 @@
+export const techStack: Array<string> = [
+  "javascript",
+  "typescript",
+  "react",
+  "redux",
+  "node",
+  "mongo",
+  "next",
+  "jest",
+  "git",
+  "cypress",
+  "bootstrap",
+  "figma",
+  "css",
+  "html5",
+  "github",
+  "sass",
+];
