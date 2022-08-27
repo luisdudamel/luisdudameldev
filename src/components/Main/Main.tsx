@@ -1,5 +1,6 @@
 import About from "../About/About";
 import Hero from "../Hero/Hero";
+import Projects from "../Projects/Projects";
 import MainStyled from "./MainStyled";
 
 const Main = (): JSX.Element => {
@@ -7,6 +8,7 @@ const Main = (): JSX.Element => {
     <MainStyled>
       <Hero />
       <About />
+      <Projects />
     </MainStyled>
   );
 };

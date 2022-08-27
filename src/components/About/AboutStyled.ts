@@ -16,7 +16,7 @@ export const AboutTitle = styled.h2`
   text-align: center;
   color: var(--darkblue);
   font-size: 1.8rem;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 0;
 `;
 
@@ -92,6 +92,7 @@ export const AboutStackIconsContainer = styled.div`
   gap: 3px;
   width: 80vw;
   justify-content: center;
+  padding-bottom: 30px;
 `;
 
 export const AboutStackIcon = styled.img`
