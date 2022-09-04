@@ -16,7 +16,6 @@ const Hero = (): JSX.Element => {
   return (
     <>
       <HeroStyled>
-        <input type="checkbox" className="toggler" />
         <div onClick={hamburgerClick}>
           <Hamburger />
         </div>
