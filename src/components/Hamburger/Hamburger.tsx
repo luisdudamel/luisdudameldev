@@ -1,4 +1,6 @@
+import { Link, ScrollLink } from "react-scroll";
 import Button from "../Button/Button";
+
 import { HamburgerStyled } from "./HamburgerStyled";
 
 const Hamburger = (): JSX.Element => {
@@ -13,9 +15,26 @@ const Hamburger = (): JSX.Element => {
       <div className="menu">
         <div className="menu_container">
           <ul className="menu_list">
-            <li>Home</li>
-            <li>About</li>
-            <li>Projects</li>
+            <li>
+              <Link duration={500} smooth={true} to="home">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link duration={500} smooth={true} to="about">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link duration={500} smooth={true} to="projects">
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link duration={500} smooth={true} to="contact">
+                Contact
+              </Link>
+            </li>
           </ul>
           <Button text="RESUME" />
         </div>

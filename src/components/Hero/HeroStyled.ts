@@ -9,10 +9,6 @@ export const HeroStyled = styled.section`
   flex-direction: column;
   justify-content: center;
   background-color: var(--dark);
-
-  .hamburger {
-    color: white;
-  }
 `;
 
 export const HeroName = styled.h1`

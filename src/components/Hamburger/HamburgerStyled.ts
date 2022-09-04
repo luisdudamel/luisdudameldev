@@ -6,17 +6,17 @@ export const HamburgerStyled = styled.div`
   right: 5%;
   margin-left: -2em;
   margin-top: -45px;
-  width: 2em;
-  height: 45px;
+  width: 2.5em;
+  height: 2.5em;
   z-index: 5;
 
   .toggler {
     z-index: 6;
-    height: 45px;
-    width: 2.5em;
+    height: 3em;
+    width: 3em;
     position: absolute;
-    top: 3.2em;
-    right: 1%;
+    top: 3.6em;
+    right: -0.3em;
     margin-left: -2em;
     margin-top: -45px;
     cursor: pointer;
@@ -25,9 +25,14 @@ export const HamburgerStyled = styled.div`
 
   .hamburger {
     position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     height: 2px;
     width: 1.7em;
-    margin-top: 6px;
+    margin-top: 5px;
+    right: 7px;
     z-index: 5;
 
     &_bread {
@@ -38,12 +43,13 @@ export const HamburgerStyled = styled.div`
       height: 2px;
       width: 1.7em;
       margin-top: 6px;
-      transition: all 0.5s;
+      transition: all 0.4s;
     }
     &_meat {
       background-color: white;
       height: 2px;
-      width: 1.7em;
+      width: 1em;
+
       margin-top: 6px;
       transition: all 0.2s;
     }
@@ -85,11 +91,16 @@ export const HamburgerStyled = styled.div`
       gap: 40px;
     }
   }
+
+  .toggler:checked {
+    z-index: 21;
+  }
+
   .toggler:checked ~ .menu {
     opacity: 100;
     right: 0vw;
     width: 50vw;
-    transition: all 0.6s;
+    transition: all 0.4s ease;
   }
 
   .toggler:checked ~ .hamburger {
@@ -105,13 +116,13 @@ export const HamburgerStyled = styled.div`
     div:nth-child(1) {
       top: 10px;
       transform: rotate(45deg);
-      transition: all 0.5s;
+      transition: all 0.3s;
     }
 
     div:nth-child(3) {
       top: -6px;
       transform: rotate(135deg);
-      transition: all 1s;
+      transition: all 0.5s;
     }
   }
 `;

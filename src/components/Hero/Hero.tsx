@@ -9,16 +9,10 @@ import {
 } from "./HeroStyled";
 
 const Hero = (): JSX.Element => {
-  const hamburgerClick = () => {
-    console.log("asdasd");
-  };
-
   return (
     <>
       <HeroStyled>
-        <div onClick={hamburgerClick}>
-          <Hamburger />
-        </div>
+        <Hamburger />
         <HeroSubhead>Hi, I'm</HeroSubhead>
         <HeroName>
           Luis Dudamel<HeroDot>.</HeroDot>
