@@ -11,7 +11,7 @@ import {
 const Projects = (): JSX.Element => {
   return (
     <ProjectsStyled>
-      <ProjectsTitle>Projects</ProjectsTitle>
+      <ProjectsTitle>Curently working on</ProjectsTitle>
       <ProjectItem>
         <ProjectItemContainer>
           <img
@@ -30,7 +30,7 @@ const Projects = (): JSX.Element => {
               Google Maps integration.
               <br />
               Material UI.
-              <br /> User auth via JWT.{" "}
+              <br /> API rest built with Express + MongoDB.{" "}
             </ProjectItemDescription>
             <div>
               <img
@@ -46,17 +46,9 @@ const Projects = (): JSX.Element => {
             </div>
           </ProjectDescriptionContainer>
         </ProjectItemContainer>
-
-        <div>
-          <img
-            src="./img/projects/barkedin-desktop.png"
-            width={300}
-            alt="Desktop showing barkedin app"
-          />
-        </div>
       </ProjectItem>
       <MoreProjectsContainer>
-        Looking for more? <br /> Check out my github!
+        Looking for more? <br /> Check out my GitHub!
         <img
           src="./img/techicons/github-orange.png"
           height={60}

@@ -67,6 +67,7 @@ export const ProjectItemDescription = styled.p`
   margin-top: 0px;
   font-family: var(--common-font);
   line-height: 1.2rem;
+  font-size: 0.8rem;
 `;
 
 export const MoreProjectsContainer = styled.div`
@@ -79,6 +80,7 @@ export const MoreProjectsContainer = styled.div`
   margin-bottom: 0;
 
   img {
+    margin-top: 20px;
     margin-bottom: 20px;
   }
 `;

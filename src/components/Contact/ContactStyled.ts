@@ -51,4 +51,6 @@ export const ContactButton = styled.button`
   font-size: 1.2rem;
   border-radius: 20px;
   color: white;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
 `;

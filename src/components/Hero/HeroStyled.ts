@@ -9,6 +9,24 @@ export const HeroStyled = styled.section`
   flex-direction: column;
   justify-content: center;
   background-color: var(--dark);
+
+  .hamburger {
+    color: white;
+  }
+  .toggler {
+    z-index: 6;
+    height: 45px;
+    width: 2em;
+    position: absolute;
+    top: 4em;
+    right: 5%;
+    margin-left: -2em;
+    margin-top: -45px;
+    cursor: pointer;
+    opacity: 0;
+  }
+  .toggler:checked {
+  }
 `;
 
 export const HeroName = styled.h1`
