@@ -10,17 +10,25 @@ import {
 } from "./ProjectsStyled";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { Element } from "react-scroll";
 
 const Projects = (): JSX.Element => {
+  const openInNewTab = (url: string): void => {
+    const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+    if (newWindow) newWindow.opener = null;
+  };
+
   useEffect(() => {
     Aos.init({ duration: 500, easing: "ease-in-out-cubic", once: true });
   }, []);
 
   return (
     <ProjectsStyled>
-      <ProjectsTitle data-aos="fade-right" data-aos-delay="200">
-        Curently working on
-      </ProjectsTitle>
+      <Element name="projects">
+        <ProjectsTitle data-aos="fade-right" data-aos-delay="200">
+          Curently working on
+        </ProjectsTitle>
+      </Element>
       <ProjectItem>
         <ProjectItemContainer>
           <img
@@ -53,13 +61,20 @@ const Projects = (): JSX.Element => {
                 alt="Github logo"
                 data-aos="zoom-in"
                 data-aos-offset="350"
+                onClick={() =>
+                  openInNewTab("https://github.com/luisdudamel/barkedin-front")
+                }
               />
+
               <img
                 src="./img/techicons/web-orange.png"
                 height={40}
                 alt="Website logo"
                 data-aos="zoom-in"
                 data-aos-offset="400"
+                onClick={() =>
+                  openInNewTab("https://www.luisdudamel.dev/barkedin")
+                }
               />
             </div>
           </ProjectDescriptionContainer>

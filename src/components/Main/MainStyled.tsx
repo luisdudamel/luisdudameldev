@@ -23,5 +23,18 @@ export const GoToTopStyled = styled.div`
   img.scrolled {
     opacity: 100;
     transition: all 0.4s;
+    animation: zoom-in-zoom-out 1s ease;
+  }
+
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.5, 1.5);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
   }
 `;

@@ -73,11 +73,14 @@ export const HamburgerStyled = styled.div`
     height: 100vh;
 
     &_list {
-      margin-top: 100px;
+      margin-top: 150px;
       padding-left: 0px;
       width: 100%;
       text-align: center;
       list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
 
       li {
         margin-bottom: 30px;

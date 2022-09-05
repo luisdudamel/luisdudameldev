@@ -45,10 +45,6 @@ export const ProjectItem = styled.div`
     margin-bottom: 0;
     margin-top: 0;
   }
-  img:only-child {
-    border-radius: 20px;
-    box-shadow: 8px 6px 5px -4px rgba(61, 90, 128, 0.92);
-  }
 `;
 
 export const ProjectDescriptionContainer = styled.div`

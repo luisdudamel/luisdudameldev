@@ -21,7 +21,13 @@ const Hamburger = (): JSX.Element => {
 
   return (
     <HamburgerStyled>
-      <input onClick={hidOverflow} type="checkbox" className="toggler" />
+      <input
+        onClick={hidOverflow}
+        type="checkbox"
+        checked={modalOpen}
+        className="toggler"
+        readOnly
+      />
       <div className="hamburger">
         <div className="hamburger_bread"></div>
         <div className="hamburger_meat"></div>
@@ -31,22 +37,32 @@ const Hamburger = (): JSX.Element => {
         <div className="menu_container">
           <ul className="menu_list">
             <li>
-              <Link duration={500} smooth={true} to="home">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link duration={500} smooth={true} to="about">
+              <Link
+                onClick={hidOverflow}
+                duration={500}
+                smooth={true}
+                to="about"
+              >
                 About
               </Link>
             </li>
             <li>
-              <Link duration={500} smooth={true} to="projects">
+              <Link
+                onClick={hidOverflow}
+                duration={500}
+                smooth={true}
+                to="projects"
+              >
                 Projects
               </Link>
             </li>
             <li>
-              <Link duration={500} smooth={true} to="contact">
+              <Link
+                onClick={hidOverflow}
+                duration={500}
+                smooth={true}
+                to="contact"
+              >
                 Contact
               </Link>
             </li>
