@@ -97,6 +97,10 @@ export const HamburgerStyled = styled.div`
     position: fixed;
     right: 1.2em;
     top: 5em;
+
+    #app {
+      overflow: hidden;
+    }
   }
 
   .toggler:checked ~ .menu {
