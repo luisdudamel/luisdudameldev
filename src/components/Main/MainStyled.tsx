@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const MainStyled = styled.div`
+export const MainStyled = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,4 +8,20 @@ const MainStyled = styled.div`
   min-height: 100vh;
 `;
 
-export default MainStyled;
+export const GoToTopStyled = styled.div`
+  position: fixed;
+  bottom: 10px;
+  right: 4vw;
+  z-index: 20;
+  width: 25px;
+  transition: all 0.4s;
+  img {
+    opacity: 0;
+    transition: all 0.4s;
+  }
+
+  img.scrolled {
+    opacity: 100;
+    transition: all 0.4s;
+  }
+`;
