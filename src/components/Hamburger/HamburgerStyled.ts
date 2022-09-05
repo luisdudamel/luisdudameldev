@@ -94,6 +94,9 @@ export const HamburgerStyled = styled.div`
 
   .toggler:checked {
     z-index: 21;
+    position: fixed;
+    right: 1.2em;
+    top: 5em;
   }
 
   .toggler:checked ~ .menu {
@@ -105,6 +108,8 @@ export const HamburgerStyled = styled.div`
 
   .toggler:checked ~ .hamburger {
     z-index: 20;
+    position: fixed;
+    right: 1.6em;
 
     > .hamburger {
       &_meat {

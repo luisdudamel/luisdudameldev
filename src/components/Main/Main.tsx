@@ -8,12 +8,8 @@ import MainStyled from "./MainStyled";
 const Main = (): JSX.Element => {
   return (
     <MainStyled>
-      <Element name="home">
-        <Hero />
-      </Element>
-      <Element name="about">
-        <About />
-      </Element>
+      <Hero />
+      <About />
       <Element name="projects">
         <Projects />
       </Element>

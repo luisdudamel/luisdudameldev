@@ -1,4 +1,4 @@
-import { Link, ScrollLink } from "react-scroll";
+import { Link } from "react-scroll";
 import Button from "../Button/Button";
 
 import { HamburgerStyled } from "./HamburgerStyled";
@@ -12,6 +12,7 @@ const Hamburger = (): JSX.Element => {
         <div className="hamburger_meat"></div>
         <div className="hamburger_bread"></div>
       </div>
+
       <div className="menu">
         <div className="menu_container">
           <ul className="menu_list">
