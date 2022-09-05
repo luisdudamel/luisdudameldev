@@ -1,3 +1,4 @@
+import { Element } from "react-scroll";
 import About from "../About/About";
 import Contact from "../Contact/Contact";
 import Hero from "../Hero/Hero";
@@ -9,8 +10,12 @@ const Main = (): JSX.Element => {
     <MainStyled>
       <Hero />
       <About />
-      <Projects />
-      <Contact />
+      <Element name="projects">
+        <Projects />
+      </Element>
+      <Element name="contact">
+        <Contact />
+      </Element>
     </MainStyled>
   );
 };

@@ -10,11 +10,15 @@
     "@types/node": "^16.11.47",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
+    "@types/react-scroll": "^1.8.4",
     "@types/styled-components": "^5.1.25",
+    "aos": "^2.3.4",
+    "framer-motion": "^7.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
+    "react-scroll": "^1.8.7",
     "typescript": "^4.7.4",
     "web-vitals": "^2.1.4"
   },
@@ -44,6 +48,7 @@
     ]
   },
   "devDependencies": {
+    "@types/aos": "^3.0.4",
     "husky": "^8.0.0",
     "styled-components": "^5.3.5"
   }
