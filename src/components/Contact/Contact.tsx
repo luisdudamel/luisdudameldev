@@ -16,11 +16,11 @@ const Contact = (): JSX.Element => {
   return (
     <ContactStyled>
       <Element name="contact">
-        <ContactTitle data-aos="fade-right" data-aos-delay="300">
+        <ContactTitle data-aos="fade-right" data-aos-offset="500">
           Let's talk!
         </ContactTitle>
       </Element>
-      <ContactArticle data-aos="fade-right" data-aos-offset="300">
+      <ContactArticle data-aos="fade-right" data-aos-offset="550">
         I’m always looking for new oportunities. Whether you want to say hi or
         have a question. My inbox is always open.{" "}
       </ContactArticle>
@@ -28,13 +28,13 @@ const Contact = (): JSX.Element => {
         <ContactButton
           onClick={() => window.open("mailto:luis@luisdudamel.dev")}
           data-aos="zoom-in"
-          data-aos-delay="300"
+          data-aos-offset="500"
         >
           Get in touch
         </ContactButton>
         <img
           data-aos="zoom-in"
-          data-aos-delay="300"
+          data-aos-offset="500"
           src="./img/techicons/linkedin-logo.png"
           width={50}
           alt="Linkedin logo"
@@ -44,13 +44,13 @@ const Contact = (): JSX.Element => {
         />
         <img
           data-aos="zoom-in"
-          data-aos-delay="300"
+          data-aos-offset="550"
           src="./img/techicons/twitter-logo.png"
           width={50}
           alt="Twitter logo"
           onClick={() => openInNewTab("https://twitter.com/esLuisDudamel/")}
         />
-        <p data-aos="fade-right" data-aos-delay="200">
+        <p data-aos="fade-right" data-aos-delay="500">
           <span>Built</span> and <span>designed</span> by Luis Dudamel
         </p>
       </ContactIconsContainer>
