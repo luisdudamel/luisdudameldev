@@ -36,7 +36,9 @@ const Main = (): JSX.Element => {
           alt="Go to top arrow"
         />
       </GoToTopStyled>
+
       <Hero />
+
       <About />
       <Projects />
       <Contact />

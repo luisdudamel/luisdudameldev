@@ -7,7 +7,7 @@ import {
   HeroText,
   HeroTitle,
 } from "./HeroStyled";
-import { Element } from "react-scroll";
+
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -20,18 +20,13 @@ const Hero = (): JSX.Element => {
   return (
     <>
       <HeroStyled>
-        <Element name="home">
-          <Hamburger />
-        </Element>
-        <HeroSubhead data-aos="slide-down">Hi, I'm</HeroSubhead>
+        <Hamburger />
+        <HeroSubhead data-aos="fade-down">Hi, I'm</HeroSubhead>
         <HeroName data-aos="slide-right" data-aos-delay="200">
           Luis Dudamel<HeroDot>.</HeroDot>
         </HeroName>
         <HeroTitle data-aos="slide-right" data-aos-delay="400">
-          I create stuff <br />
-        </HeroTitle>
-        <HeroTitle data-aos="slide-right" data-aos-delay="550">
-          for the web
+          I create stuff for the web
         </HeroTitle>
         <HeroText data-aos="fade-up" data-aos-delay="600">
           I'm a software engineer, who loves to find new ways of solving
