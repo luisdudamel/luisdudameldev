@@ -89,20 +89,22 @@ const About = (): JSX.Element => {
         <AboutStackTitle data-aos="zoom-in" data-aos-offset="300">
           My Stack
         </AboutStackTitle>
-        <AboutStackIconsContainer>
-          {techStack.map((stack, index) => {
-            return (
-              <AboutStackIcon
-                key={stack}
-                height={60}
-                alt={`${stack} logo`}
-                src={`./img/techicons/${stack}-logo.png`}
-                data-aos="zoom-in"
-                data-aos-offset="400"
-              ></AboutStackIcon>
-            );
-          })}
-        </AboutStackIconsContainer>
+        <div className="icons-section">
+          <AboutStackIconsContainer>
+            {techStack.map((stack, index) => {
+              return (
+                <AboutStackIcon
+                  key={stack}
+                  height={60}
+                  alt={`${stack} logo`}
+                  src={`./img/techicons/${stack}-logo.png`}
+                  data-aos="zoom-in"
+                  data-aos-offset="400"
+                ></AboutStackIcon>
+              );
+            })}
+          </AboutStackIconsContainer>
+        </div>
       </Element>
     </AboutStyled>
   );

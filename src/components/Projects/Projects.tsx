@@ -54,7 +54,7 @@ const Projects = (): JSX.Element => {
               Material UI.
               <br /> API rest built with Express + MongoDB.{" "}
             </ProjectItemDescription>
-            <div>
+            <div className="tech-icons-container">
               <img
                 src="./img/techicons/github-orange.png"
                 height={40}
@@ -84,7 +84,7 @@ const Projects = (): JSX.Element => {
         Looking for more? <br /> Check out my GitHub!
         <img
           src="./img/techicons/github-orange.png"
-          height={60}
+          width={60}
           alt="Github logo"
           data-aos="fade-right"
           data-aos-offset="400"

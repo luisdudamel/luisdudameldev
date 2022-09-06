@@ -5,10 +5,10 @@ export const ProjectsStyled = styled.section`
   min-height: 100vh;
   width: 100%;
   display: flex;
-  flex-direction: column;
   padding: 0px 30px;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
 `;
 
 export const ProjectsTitle = styled.h2`
@@ -26,6 +26,11 @@ export const ProjectItemContainer = styled.div`
   flex-direction: row;
   align-items: flex-start;
   gap: 10px;
+
+  .tech-icons-container {
+    display: flex;
+    flex-direction: row;
+  }
 `;
 
 export const ProjectItem = styled.div`
@@ -74,6 +79,9 @@ export const MoreProjectsContainer = styled.div`
   font-size: 1.6rem;
   font-weight: 600;
   margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   img {
     margin-top: 20px;

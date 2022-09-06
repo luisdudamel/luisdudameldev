@@ -9,6 +9,11 @@ export const AboutStyled = styled.section`
   padding: 0px 30px;
   flex-direction: column;
   align-items: center;
+
+  .icons-section {
+    display: flex;
+    justify-content: center;
+  }
 `;
 
 export const AboutTitle = styled.h2`
@@ -63,7 +68,7 @@ export const AboutEducationSchoolSection = styled.div`
 `;
 
 export const AboutEducationTitle = styled.p`
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 600;
   font-family: var(--common-font);
   color: var(--orange);
