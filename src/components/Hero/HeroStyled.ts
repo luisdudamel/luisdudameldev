@@ -9,8 +9,6 @@ export const HeroStyled = styled.section`
   flex-direction: column;
   justify-content: center;
   background-color: var(--dark);
-  @media (min-width: 700px) {
-  }
 `;
 
 export const HeroName = styled.h1`
