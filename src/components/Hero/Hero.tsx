@@ -27,10 +27,13 @@ const Hero = (): JSX.Element => {
         <HeroName data-aos="slide-right" data-aos-delay="200">
           Luis Dudamel<HeroDot>.</HeroDot>
         </HeroName>
-        <HeroTitle data-aos="fade-up" data-aos-delay="400">
-          I create stuff <br /> for the web
+        <HeroTitle data-aos="slide-right" data-aos-delay="400">
+          I create stuff <br />
         </HeroTitle>
-        <HeroText data-aos="fade-up" data-aos-delay="500">
+        <HeroTitle data-aos="slide-right" data-aos-delay="550">
+          for the web
+        </HeroTitle>
+        <HeroText data-aos="fade-up" data-aos-delay="600">
           I'm a software engineer, who loves to find new ways of solving
           problems while building great digital experiences.
         </HeroText>

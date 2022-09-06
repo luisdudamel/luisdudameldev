@@ -28,20 +28,22 @@ const About = (): JSX.Element => {
   return (
     <AboutStyled>
       <Element name="about">
-        <AboutTitle data-aos="slide-right">About me</AboutTitle>
+        <AboutTitle data-aos="slide-right" data-aos-offset="150">
+          About me
+        </AboutTitle>
         <AboutArticle data-aos="slide-right" data-aos-offset="200">
           I love to create new ways of
           <ArticleHighlight> solving problems</ArticleHighlight>, taking
           advantage of my great eye for aesthetics.
         </AboutArticle>{" "}
-        <AboutArticle data-aos="fade-right" data-aos-offset="300">
+        <AboutArticle data-aos="fade-right" data-aos-offset="200">
           {" "}
           With
           <ArticleHighlight> testing </ArticleHighlight>
           as my main strategy, I consider myself a clean code advocate, with
           special attention to maintainability and scalability.
         </AboutArticle>
-        <ArticleFigure data-aos="zoom-out" data-aos-offset="250">
+        <ArticleFigure data-aos="zoom-out" data-aos-offset="300">
           <AboutPicture
             alt="Luis Dudamel headshot"
             src="/img/luis-pic2.webp"
@@ -70,7 +72,7 @@ const About = (): JSX.Element => {
               </AboutEducationSchool>
             </AboutEducationSchoolSection>
           </AboutEducationItem>
-          <AboutEducationItem data-aos="fade-right" data-aos-offset="230">
+          <AboutEducationItem data-aos="fade-right" data-aos-offset="300">
             <img
               alt="Graduation hat icon"
               height={50}
@@ -84,23 +86,25 @@ const About = (): JSX.Element => {
             </AboutEducationSchoolSection>
           </AboutEducationItem>
         </AboutEducation>
-        <AboutStackTitle data-aos="zoom-in" data-aos-offset="200">
+        <AboutStackTitle data-aos="zoom-in" data-aos-offset="300">
           My Stack
         </AboutStackTitle>
-        <AboutStackIconsContainer>
-          {techStack.map((stack) => {
-            return (
-              <AboutStackIcon
-                key={stack}
-                height={60}
-                alt={`${stack} logo`}
-                src={`./img/techicons/${stack}-logo.png`}
-                data-aos="zoom-in"
-                data-aos-offset="200"
-              ></AboutStackIcon>
-            );
-          })}
-        </AboutStackIconsContainer>
+        <div className="icons-section">
+          <AboutStackIconsContainer>
+            {techStack.map((stack, index) => {
+              return (
+                <AboutStackIcon
+                  key={stack}
+                  height={60}
+                  alt={`${stack} logo`}
+                  src={`./img/techicons/${stack}-logo.png`}
+                  data-aos="zoom-in"
+                  data-aos-offset="400"
+                ></AboutStackIcon>
+              );
+            })}
+          </AboutStackIconsContainer>
+        </div>
       </Element>
     </AboutStyled>
   );

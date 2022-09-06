@@ -71,13 +71,17 @@ export const HamburgerStyled = styled.div`
     transition: all 1s;
     transition-delay: 0.1s;
     height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 
     &_list {
-      margin-top: 100px;
+      margin-top: 150px;
       padding-left: 0px;
       width: 100%;
       text-align: center;
       list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
 
       li {
         margin-bottom: 30px;
@@ -97,6 +101,10 @@ export const HamburgerStyled = styled.div`
     position: fixed;
     right: 1.2em;
     top: 5em;
+
+    #app {
+      overflow: hidden;
+    }
   }
 
   .toggler:checked ~ .menu {
