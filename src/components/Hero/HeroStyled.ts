@@ -72,5 +72,6 @@ export const HeroText = styled.p`
   }
   @media (min-width: 1024px) {
     margin-left: 60px;
+    font-size: 1.5rem;
   }
 `;

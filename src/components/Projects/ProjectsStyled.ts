@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ProjectsStyled = styled.section`
   background-color: var(--dark);
   min-height: 100vh;
-  width: 100%;
+  width: 100vw;
   display: flex;
   padding: 0px 30px;
   flex-direction: column;

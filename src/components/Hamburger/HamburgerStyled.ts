@@ -21,6 +21,9 @@ export const HamburgerStyled = styled.div`
     margin-top: -45px;
     cursor: pointer;
     opacity: 0;
+    @media (min-width: 900px) {
+      display: none;
+    }
   }
 
   .hamburger {
@@ -34,6 +37,9 @@ export const HamburgerStyled = styled.div`
     margin-top: 5px;
     right: 7px;
     z-index: 5;
+    @media (min-width: 900px) {
+      display: none;
+    }
 
     &_bread {
       top: 0px;
@@ -49,7 +55,6 @@ export const HamburgerStyled = styled.div`
       background-color: white;
       height: 2px;
       width: 1em;
-
       margin-top: 6px;
       transition: all 0.2s;
     }
@@ -101,10 +106,6 @@ export const HamburgerStyled = styled.div`
     position: fixed;
     right: 1.2em;
     top: 5em;
-
-    #app {
-      overflow: hidden;
-    }
   }
 
   .toggler:checked ~ .menu {
@@ -116,8 +117,6 @@ export const HamburgerStyled = styled.div`
 
   .toggler:checked ~ .hamburger {
     z-index: 20;
-    position: fixed;
-    right: 1.6em;
 
     > .hamburger {
       &_meat {

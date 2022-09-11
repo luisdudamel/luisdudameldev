@@ -53,4 +53,13 @@ export const ContactButton = styled.button`
   color: white;
   padding-left: 1.2rem;
   padding-right: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  :hover {
+    background-color: white;
+    color: var(--orange);
+    border: solid 1px var(--orange);
+    transition: all 0.3s;
+  }
 `;

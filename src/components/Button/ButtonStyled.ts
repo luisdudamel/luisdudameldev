@@ -8,6 +8,12 @@ const ButtonStyled = styled.button`
   font-family: var(--square-font);
   border: 0px;
   height: 30px;
+  cursor: pointer;
+  :hover {
+    background-color: white;
+    color: var(--orange);
+    transition: all 0.3s;
+  }
 `;
 
 export default ButtonStyled;

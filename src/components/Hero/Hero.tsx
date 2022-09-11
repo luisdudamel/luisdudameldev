@@ -1,4 +1,3 @@
-import Hamburger from "../Hamburger/Hamburger";
 import {
   HeroDot,
   HeroStyled,
@@ -20,7 +19,6 @@ const Hero = (): JSX.Element => {
   return (
     <>
       <HeroStyled>
-        <Hamburger />
         <HeroSubhead data-aos="fade-down">Hi, I'm</HeroSubhead>
         <HeroName data-aos="slide-right" data-aos-delay="200">
           Luis Dudamel<HeroDot>.</HeroDot>

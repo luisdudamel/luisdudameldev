@@ -28,13 +28,13 @@ const Contact = (): JSX.Element => {
         <ContactButton
           onClick={() => window.open("mailto:luis@luisdudamel.dev")}
           data-aos="zoom-in"
-          data-aos-offset="500"
+          data-aos-offset="300"
         >
           Get in touch
         </ContactButton>
         <img
           data-aos="zoom-in"
-          data-aos-offset="500"
+          data-aos-offset="200"
           src="./img/techicons/linkedin-logo.png"
           width={50}
           alt="Linkedin logo"
@@ -44,13 +44,13 @@ const Contact = (): JSX.Element => {
         />
         <img
           data-aos="zoom-in"
-          data-aos-offset="550"
+          data-aos-offset="200"
           src="./img/techicons/twitter-logo.png"
           width={50}
           alt="Twitter logo"
           onClick={() => openInNewTab("https://twitter.com/esLuisDudamel/")}
         />
-        <p data-aos="fade-right" data-aos-delay="500">
+        <p data-aos="fade-right" data-aos-delay="300">
           <span>Built</span> and <span>designed</span> by Luis Dudamel
         </p>
       </ContactIconsContainer>
