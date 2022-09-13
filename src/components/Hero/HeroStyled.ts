@@ -22,7 +22,7 @@ export const HeroName = styled.h1`
   }
 
   @media (min-width: 1024px) {
-    margin-left: 60px;
+    margin-left: 100px;
     font-size: 5rem;
   }
 `;
@@ -41,7 +41,7 @@ export const HeroSubhead = styled.p`
     font-size: 1.5rem;
   }
   @media (min-width: 1024px) {
-    margin-left: 60px;
+    margin-left: 100px;
     font-size: 2rem;
   }
 `;
@@ -58,7 +58,7 @@ export const HeroTitle = styled.h2`
     font-size: 4rem;
   }
   @media (min-width: 1024px) {
-    margin-left: 60px;
+    margin-left: 100px;
   }
 `;
 
@@ -71,7 +71,7 @@ export const HeroText = styled.p`
     width: 40%;
   }
   @media (min-width: 1024px) {
-    margin-left: 60px;
+    margin-left: 100px;
     font-size: 1.5rem;
   }
 `;

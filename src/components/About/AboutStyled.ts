@@ -11,6 +11,10 @@ export const AboutStyled = styled.section`
   align-items: center;
   justify-content: space-around;
 
+  @media (min-width: 900px) {
+    justify-content: flex-start;
+    gap: 100px;
+  }
   .icons-section {
     display: flex;
     justify-content: center;
@@ -21,6 +25,7 @@ export const AboutStyled = styled.section`
 `;
 
 export const AboutContainer = styled.div`
+  height: 100%;
   @media (min-width: 900px) {
     .container-desktop {
       display: flex;
@@ -57,7 +62,7 @@ export const AboutTitle = styled.h2`
     text-align: left;
   }
   @media (min-width: 1200px) {
-    font-size: 2.6rem;
+    font-size: 3rem;
     text-align: left;
   }
 `;
@@ -141,6 +146,7 @@ export const AboutEducationTitle = styled.p`
   line-height: 10px;
   @media (min-width: 900px) {
     font-size: 1.1rem;
+    line-height: 20px;
   }
   @media (min-width: 1200px) {
     font-size: 1.3rem;

@@ -4,7 +4,9 @@ import {
   ProjectDescriptionContainer,
   ProjectItem,
   ProjectItemContainer,
+  ProjectItemContainerImage,
   ProjectItemDescription,
+  ProjectsContainer,
   ProjectsStyled,
   ProjectsTitle,
 } from "./ProjectsStyled";
@@ -23,21 +25,41 @@ const Projects = (): JSX.Element => {
   }, []);
 
   return (
-    <Element name="projects">
-      <ProjectsStyled>
-        <ProjectsTitle data-aos="fade-right" data-aos-offset="400">
-          Curently working on
-        </ProjectsTitle>
-
+    <ProjectsStyled>
+      <Element className="projects-element" name="projects">
+        <div>
+          <ProjectsTitle data-aos="fade-right" data-aos-offset="400">
+            Curently working on
+          </ProjectsTitle>
+        </div>
+      </Element>
+      <ProjectsContainer>
         <ProjectItem>
           <ProjectItemContainer>
-            <img
-              src="./img/projects/barkedin-mobile.png"
-              height={300}
-              alt="Mobile phone showing barkedin app"
-              data-aos="fade-right"
-              data-aos-offset="600"
-            />
+            <div>
+              <ProjectItemContainerImage
+                height={300}
+                alt="Mobile phone showing barkedin app"
+                data-aos="fade-right"
+                data-aos-offset="600"
+                src="./img/projects/barkedin-mobile.png"
+              ></ProjectItemContainerImage>
+              <ProjectItemContainerImage
+                height={300}
+                alt="Mobile phone showing barkedin app"
+                data-aos="fade-right"
+                data-aos-offset="600"
+                src="./img/projects/barkedin-mobile.png"
+              ></ProjectItemContainerImage>
+              <ProjectItemContainerImage
+                height={300}
+                alt="Mobile phone showing barkedin app"
+                data-aos="fade-right"
+                data-aos-offset="600"
+                src="./img/projects/barkedin-mobile.png"
+              ></ProjectItemContainerImage>
+            </div>
+
             <ProjectDescriptionContainer
               data-aos="fade-right"
               data-aos-offset="600"
@@ -93,8 +115,8 @@ const Projects = (): JSX.Element => {
             onClick={() => openInNewTab("https://github.com/luisdudamel")}
           />
         </MoreProjectsContainer>
-      </ProjectsStyled>
-    </Element>
+      </ProjectsContainer>
+    </ProjectsStyled>
   );
 };
 
