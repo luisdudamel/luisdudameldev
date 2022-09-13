@@ -54,6 +54,7 @@ export const ContactIconsContainer = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 50px;
+  padding-top: 10px;
 
   img {
     cursor: pointer;
