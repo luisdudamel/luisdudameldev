@@ -105,6 +105,7 @@ export const ArticleFigureDesktop = styled.figure`
   @media (min-width: 900px) {
     display: block;
     align-self: center;
+
     .figure_caption {
       font-size: 1.3rem;
     }

@@ -9,7 +9,7 @@ export const ProjectsStyled = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-
+  gap: 4em;
   .projects-element {
     width: 100%;
   }

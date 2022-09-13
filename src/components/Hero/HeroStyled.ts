@@ -18,12 +18,23 @@ export const HeroName = styled.h1`
   margin: 0px;
 
   @media (min-width: 700px) {
-    font-size: 4rem;
+    font-size: 3rem;
+    margin-left: 20px;
   }
 
-  @media (min-width: 1024px) {
-    margin-left: 100px;
+  @media (min-width: 900px) {
+    font-size: 4rem;
+    margin-left: 40px;
+  }
+
+  @media (min-width: 1100px) {
+    margin-left: 80px;
     font-size: 5rem;
+  }
+
+  @media (min-width: 1300px) {
+    margin-left: 100px;
+    font-size: 7rem;
   }
 `;
 
@@ -39,10 +50,17 @@ export const HeroSubhead = styled.p`
 
   @media (min-width: 700px) {
     font-size: 1.5rem;
+    margin-left: 20px;
   }
-  @media (min-width: 1024px) {
-    margin-left: 100px;
+  @media (min-width: 900px) {
+    margin-left: 40px;
+  }
+  @media (min-width: 1100px) {
+    margin-left: 80px;
     font-size: 2rem;
+  }
+  @media (min-width: 1300px) {
+    margin-left: 100px;
   }
 `;
 
@@ -56,8 +74,17 @@ export const HeroTitle = styled.h2`
   @media (min-width: 700px) {
     font-size: 3rem;
     font-size: 4rem;
+    margin-left: 20px;
   }
-  @media (min-width: 1024px) {
+  @media (min-width: 900px) {
+    font-size: 3rem;
+    font-size: 4rem;
+    margin-left: 40px;
+  }
+  @media (min-width: 1100px) {
+    margin-left: 80px;
+  }
+  @media (min-width: 1300px) {
     margin-left: 100px;
   }
 `;
@@ -69,9 +96,17 @@ export const HeroText = styled.p`
 
   @media (min-width: 700px) {
     width: 40%;
+    margin-left: 20px;
   }
-  @media (min-width: 1024px) {
-    margin-left: 100px;
+  @media (min-width: 900px) {
+    width: 40%;
+    margin-left: 40px;
+  }
+  @media (min-width: 1100px) {
+    margin-left: 80px;
     font-size: 1.5rem;
+  }
+  @media (min-width: 1300px) {
+    margin-left: 100px;
   }
 `;

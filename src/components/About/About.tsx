@@ -112,21 +112,22 @@ const About = (): JSX.Element => {
               </AboutStackIconsContainer>
             </div>
           </div>
-
-          <ArticleFigureDesktop data-aos="zoom-out" data-aos-offset="300">
-            <AboutPicture
-              alt="Luis Dudamel headshot"
-              src="/img/luis-pic2.webp"
-            ></AboutPicture>
-            <figcaption
-              data-aos="zoom-out"
-              data-aos-delay="500"
-              data-aos-once="false"
-              className="figure_caption"
-            >
-              Tell your dog I said hi!
-            </figcaption>
-          </ArticleFigureDesktop>
+          <div>
+            <ArticleFigureDesktop data-aos="zoom-out" data-aos-offset="300">
+              <AboutPicture
+                alt="Luis Dudamel headshot"
+                src="/img/luis-pic2.webp"
+              ></AboutPicture>
+              <figcaption
+                data-aos="zoom-out"
+                data-aos-delay="500"
+                data-aos-once="false"
+                className="figure_caption"
+              >
+                Tell your dog I said hi!
+              </figcaption>
+            </ArticleFigureDesktop>
+          </div>
         </div>
       </AboutContainer>
     </AboutStyled>
