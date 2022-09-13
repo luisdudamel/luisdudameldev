@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import Button from "../Button/Button";
-
 import { HamburgerStyled } from "./HamburgerStyled";
 
 const Hamburger = (): JSX.Element => {
@@ -10,6 +9,15 @@ const Hamburger = (): JSX.Element => {
   const hidOverflow = () => {
     setModalOpen(!modalOpen);
   };
+
+  useEffect(() => {
+    const isDesktopWidth = () => {
+      if (window.innerWidth > 899) {
+        setModalOpen(false);
+      }
+    };
+    window.addEventListener("resize", isDesktopWidth);
+  }, []);
 
   useEffect(() => {
     if (modalOpen) {
@@ -67,7 +75,7 @@ const Hamburger = (): JSX.Element => {
               </Link>
             </li>
           </ul>
-          <Button text="RESUME" />
+          <Button url={process.env.REACT_APP_CV_URL as string} text="RESUME" />
         </div>
       </div>
     </HamburgerStyled>

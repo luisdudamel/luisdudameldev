@@ -21,6 +21,7 @@ export const HamburgerStyled = styled.div`
     margin-top: -45px;
     cursor: pointer;
     opacity: 0;
+
     @media (min-width: 900px) {
       display: none;
     }
@@ -77,6 +78,9 @@ export const HamburgerStyled = styled.div`
     transition-delay: 0.1s;
     height: 100vh;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    @media (min-width: 900px) {
+      display: none;
+    }
 
     &_list {
       margin-top: 150px;
@@ -90,6 +94,16 @@ export const HamburgerStyled = styled.div`
 
       li {
         margin-bottom: 30px;
+        cursor: pointer;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 50% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size 0.3s;
+
+        :hover {
+          background-size: 50% 2px;
+        }
       }
     }
     &_container {
@@ -103,9 +117,6 @@ export const HamburgerStyled = styled.div`
 
   .toggler:checked {
     z-index: 21;
-    position: fixed;
-    right: 1.2em;
-    top: 5em;
   }
 
   .toggler:checked ~ .menu {
