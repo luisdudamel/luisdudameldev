@@ -1,47 +1,53 @@
-import MainStyled from "./MainStyled";
-import Lottie from "lottie-react";
-import * as json from "../../lottie.json";
+import { useState } from "react";
+import About from "../About/About";
+
+import Contact from "../Contact/Contact";
+import Hamburger from "../Hamburger/Hamburger";
+import Hero from "../Hero/Hero";
+import Navbar from "../Navbar/Navbar";
+import Projects from "../Projects/Projects";
+import { GoToTopStyled, MainStyled } from "./MainStyled";
 
 const Main = (): JSX.Element => {
-  return (
-    <MainStyled>
-      <Lottie className="lottie" animationData={json}></Lottie>
-      <h1>
-        In development
-        <span className="loading-dot">.</span>
-        <span className="loading-dot">.</span>
-        <span className="loading-dot">.</span>
-      </h1>
+  const [scrollVisible, setScrollVisible] = useState(false);
 
-      <div className="social-icons">
-        {`<`}
-        <a href="https://github.com/luisdudamel">
+  const toggleVisible = () => {
+    const scrolled = document.documentElement.scrollTop;
+    if (scrolled > 300) {
+      setScrollVisible(true);
+    } else if (scrolled <= 300) {
+      setScrollVisible(false);
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  window.addEventListener("scroll", toggleVisible);
+  return (
+    <>
+      {" "}
+      <Hamburger />
+      <Navbar />
+      <MainStyled>
+        <GoToTopStyled onClick={scrollToTop}>
           <img
-            className="social-icons--icon"
-            width={30}
-            src="img/github.png"
-            alt="Github Logo"
+            className={scrollVisible ? "scrolled" : ""}
+            src="./img/uparrow.png"
+            width={20}
+            alt="Go to top arrow"
           />
-        </a>
-        <a href={`mailto:${`luis@luisdudamel.dev`}`}>
-          <img
-            className="social-icons--icon"
-            width={30}
-            src="img/gmail.png"
-            alt="Email Logo"
-          />
-        </a>
-        <a href="https://www.linkedin.com/in/luis-dudamel/">
-          <img
-            className="social-icons--icon"
-            width={30}
-            src="img/linkedin.png"
-            alt="Linkedin Logo"
-          />
-        </a>
-        {` />`}
-      </div>
-    </MainStyled>
+        </GoToTopStyled>
+        <Hero />
+        <About />
+        <Projects />
+        <Contact />
+      </MainStyled>
+    </>
   );
 };
 

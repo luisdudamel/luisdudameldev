@@ -1,7 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --orange: #ee6c4d;
+  --lightblue: #e0fbfc;
+  --darkblue: #3d5a80;
+  --midblue: #98c1d9;
+  --dark: #293241;
+  --common-font: "Poppins";
+  --square-font: "Quantico";
+}
 body {
   margin: 0;
-  font-family: "Kanit", "Outfit", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(0, 50, 166);
 }

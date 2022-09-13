@@ -1,44 +1,55 @@
 import styled from "styled-components";
 
-const MainStyled = styled.div`
+export const MainStyled = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  h1 {
-    color: white;
-  }
-  .social-icons {
-    color: white;
-    font-size: 40px;
-  }
-
-  @keyframes blink {
-    50% {
-      color: transparent;
-    }
-  }
-  .loading-dot {
-    animation: 1s blink infinite;
-  }
-  .loading-dot:nth-child(2) {
-    animation-delay: 250ms;
-  }
-  .loading-dot:nth-child(3) {
-    animation-delay: 500ms;
-  }
-
-  .social-icons {
-    margin-top: 20px;
-    &--icon {
-      margin: 0 10px;
-    }
-  }
-  .lottie {
-    width: 500px;
-    height: 300px;
-  }
+  min-height: 100vh;
+  overflow: hidden;
 `;
 
-export default MainStyled;
+export const GoToTopStyled = styled.div`
+  position: fixed;
+  bottom: 30px;
+  right: 6vw;
+  z-index: 20;
+  width: 25px;
+  transition: all 0.4s;
+  cursor: pointer;
+
+  @media (min-width: 900px) {
+    transform: scale(1.5, 1.5);
+
+    :hover {
+      transform: scale(2, 2);
+    }
+  }
+
+  img {
+    opacity: 0;
+    transition: all 0.4s;
+  }
+
+  img.scrolled {
+    opacity: 100;
+    transition: all 0.4s;
+    animation: zoom-in-zoom-out 1s ease;
+  }
+
+  :active {
+    transform: scale(1.5, 1.5);
+  }
+
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.5, 1.5);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+`;

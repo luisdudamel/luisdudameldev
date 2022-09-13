@@ -1,13 +1,15 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Main from "./components/Main/Main";
+
+import MainPage from "./pages/MainPage";
+import NotFoundPage from "./pages/NotFoundPage";
 
 function App() {
   return (
-    <div className="App">
+    <div id="app" className="App">
       <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/*" element={<Main />} />
+        <Route path="/*" element={<NotFoundPage />} />
+        <Route path="/" element={<MainPage />} />
       </Routes>
     </div>
   );
