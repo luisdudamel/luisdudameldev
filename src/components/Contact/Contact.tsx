@@ -5,6 +5,7 @@ import {
   ContactIconsContainer,
   ContactStyled,
   ContactTitle,
+  StyledFooter,
 } from "./ContactStyled";
 
 const Contact = (): JSX.Element => {
@@ -24,36 +25,51 @@ const Contact = (): JSX.Element => {
         I’m always looking for new oportunities. Whether you want to say hi or
         have a question. My inbox is always open.{" "}
       </ContactArticle>
+      <ContactButton
+        onClick={() => window.open("mailto:luis@luisdudamel.dev")}
+        data-aos="zoom-in"
+        data-aos-delay="300"
+      >
+        Get in touch
+      </ContactButton>
       <ContactIconsContainer>
-        <ContactButton
-          onClick={() => window.open("mailto:luis@luisdudamel.dev")}
-          data-aos="zoom-in"
-          data-aos-offset="300"
-        >
-          Get in touch
-        </ContactButton>
         <img
-          data-aos="zoom-in"
-          data-aos-offset="200"
           src="./img/techicons/linkedin-logo.png"
           width={50}
           alt="Linkedin logo"
+          data-aos="zoom-in"
+          data-aos-delay="300"
           onClick={() =>
             openInNewTab("https://www.linkedin.com/in/luis-dudamel/")
           }
         />
         <img
-          data-aos="zoom-in"
-          data-aos-offset="200"
           src="./img/techicons/twitter-logo.png"
           width={50}
           alt="Twitter logo"
+          data-aos="zoom-in"
+          data-aos-delay="300"
           onClick={() => openInNewTab("https://twitter.com/esLuisDudamel/")}
         />
-        <p data-aos="fade-right" data-aos-delay="300">
-          <span>Built</span> and <span>designed</span> by Luis Dudamel
-        </p>
       </ContactIconsContainer>
+      <StyledFooter>
+        <span
+          onClick={() =>
+            openInNewTab("https://github.com/luisdudamel/luisdudameldev")
+          }
+        >
+          Built
+        </span>{" "}
+        and{" "}
+        <span
+          onClick={() =>
+            openInNewTab("https://github.com/luisdudamel/luisdudameldev")
+          }
+        >
+          designed
+        </span>{" "}
+        by Luis Dudamel
+      </StyledFooter>
     </ContactStyled>
   );
 };
