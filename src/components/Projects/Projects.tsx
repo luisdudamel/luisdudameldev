@@ -42,21 +42,21 @@ const Projects = (): JSX.Element => {
                 alt="Mobile phone showing barkedin app"
                 data-aos="fade-right"
                 data-aos-offset="600"
-                src="./img/projects/barkedin-mobile.png"
+                src="./img/projects/dog-list.png"
               ></ProjectItemContainerImage>
               <ProjectItemContainerImage
                 height={300}
                 alt="Mobile phone showing barkedin app"
                 data-aos="fade-right"
                 data-aos-offset="600"
-                src="./img/projects/barkedin-mobile.png"
+                src="./img/projects/edit-profile.png"
               ></ProjectItemContainerImage>
               <ProjectItemContainerImage
                 height={300}
                 alt="Mobile phone showing barkedin app"
                 data-aos="fade-right"
                 data-aos-offset="600"
-                src="./img/projects/barkedin-mobile.png"
+                src="./img/projects/meeting-detail.png"
               ></ProjectItemContainerImage>
             </div>
 

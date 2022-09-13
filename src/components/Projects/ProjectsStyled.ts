@@ -76,7 +76,7 @@ export const ProjectItemContainer = styled.div`
   img:nth-child(3) {
     display: none;
 
-    @media (min-width: 1220px) {
+    @media (min-width: 1350px) {
       display: inline;
       padding-right: 30px;
     }
@@ -130,7 +130,7 @@ export const ProjectDescriptionContainer = styled.div`
     padding-left: 10px;
     padding-right: 10px;
     cursor: pointer;
-
+    display: inline !important;
     :hover {
       color: white;
     }
@@ -154,12 +154,12 @@ export const ProjectItemDescription = styled.p`
   font-size: 0.8rem;
 
   @media (min-width: 900px) {
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 2rem;
   }
 
-  @media (min-width: 1200px) {
-    font-size: 1rem;
+  @media (min-width: 1350px) {
+    font-size: 1.4rem;
     line-height: 2.5rem;
   }
 `;
@@ -179,5 +179,14 @@ export const MoreProjectsContainer = styled.div`
   img {
     margin-top: 20px;
     margin-bottom: 20px;
+    cursor: pointer;
+
+    @media (min-width: 900px) {
+      width: 100px;
+    }
+  }
+
+  @media (min-width: 900px) {
+    font-size: 2rem;
   }
 `;
