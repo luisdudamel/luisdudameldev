@@ -4,7 +4,9 @@ import {
   ProjectDescriptionContainer,
   ProjectItem,
   ProjectItemContainer,
+  ProjectItemContainerImage,
   ProjectItemDescription,
+  ProjectsContainer,
   ProjectsStyled,
   ProjectsTitle,
 } from "./ProjectsStyled";
@@ -24,72 +26,96 @@ const Projects = (): JSX.Element => {
 
   return (
     <ProjectsStyled>
-      <Element name="projects">
-        <ProjectsTitle data-aos="fade-right" data-aos-offset="400">
-          Curently working on
-        </ProjectsTitle>
+      <Element className="projects-element" name="projects">
+        <div>
+          <ProjectsTitle data-aos="fade-right" data-aos-offset="400">
+            Curently working on
+          </ProjectsTitle>
+        </div>
       </Element>
-      <ProjectItem>
-        <ProjectItemContainer>
-          <img
-            src="./img/projects/barkedin-mobile.png"
-            height={300}
-            alt="Mobile phone showing barkedin app"
-            data-aos="fade-right"
-            data-aos-offset="600"
-          />
-          <ProjectDescriptionContainer
-            data-aos="fade-right"
-            data-aos-offset="600"
-          >
-            <h4>BarkedIn</h4>
-            <ProjectItemDescription>
-              Social network for dogs. <br /> CRUD SPA built with React +
-              Typescript.
-              <br />
-              State management with redux.
-              <br />
-              Google Maps integration.
-              <br />
-              Material UI.
-              <br /> API rest built with Express + MongoDB.{" "}
-            </ProjectItemDescription>
-            <div className="tech-icons-container">
-              <img
-                src="./img/techicons/github-orange.png"
-                height={40}
-                alt="Github logo"
-                data-aos="zoom-in"
+      <ProjectsContainer>
+        <ProjectItem>
+          <ProjectItemContainer>
+            <div>
+              <ProjectItemContainerImage
+                height={300}
+                alt="Mobile phone showing barkedin app"
+                data-aos="fade-right"
                 data-aos-offset="600"
-                onClick={() =>
-                  openInNewTab("https://github.com/luisdudamel/barkedin-front")
-                }
-              />
-
-              <img
-                src="./img/techicons/web-orange.png"
-                height={40}
-                alt="Website logo"
-                data-aos="zoom-in"
+                src="./img/projects/dog-list.png"
+              ></ProjectItemContainerImage>
+              <ProjectItemContainerImage
+                height={300}
+                alt="Mobile phone showing barkedin app"
+                data-aos="fade-right"
                 data-aos-offset="600"
-                onClick={() =>
-                  openInNewTab("https://www.luisdudamel.dev/barkedin")
-                }
-              />
+                src="./img/projects/edit-profile.png"
+              ></ProjectItemContainerImage>
+              <ProjectItemContainerImage
+                height={300}
+                alt="Mobile phone showing barkedin app"
+                data-aos="fade-right"
+                data-aos-offset="600"
+                src="./img/projects/meeting-detail.png"
+              ></ProjectItemContainerImage>
             </div>
-          </ProjectDescriptionContainer>
-        </ProjectItemContainer>
-      </ProjectItem>
-      <MoreProjectsContainer data-aos="fade-right" data-aos-offset="400">
-        Looking for more? <br /> Check out my GitHub!
-        <img
-          src="./img/techicons/github-orange.png"
-          width={60}
-          alt="Github logo"
-          data-aos="fade-right"
-          data-aos-offset="400"
-        />
-      </MoreProjectsContainer>
+
+            <ProjectDescriptionContainer
+              data-aos="fade-right"
+              data-aos-offset="600"
+            >
+              <h4>BarkedIn</h4>
+              <ProjectItemDescription>
+                Social network for dogs. <br /> CRUD SPA built with React +
+                Typescript.
+                <br />
+                State management with redux.
+                <br />
+                Google Maps integration.
+                <br />
+                Material UI.
+                <br /> API rest built with Express + MongoDB.{" "}
+              </ProjectItemDescription>
+              <div className="tech-icons-container">
+                <img
+                  src="./img/techicons/github-orange.png"
+                  height={40}
+                  alt="Github logo"
+                  data-aos="zoom-in"
+                  data-aos-offset="300"
+                  onClick={() =>
+                    openInNewTab(
+                      "https://github.com/luisdudamel/barkedin-front"
+                    )
+                  }
+                />
+
+                <img
+                  src="./img/techicons/web-orange.png"
+                  height={40}
+                  alt="Website logo"
+                  data-aos="zoom-in"
+                  data-aos-offset="300"
+                  onClick={() =>
+                    openInNewTab("https://www.luisdudamel.dev/barkedin")
+                  }
+                />
+              </div>
+            </ProjectDescriptionContainer>
+          </ProjectItemContainer>
+        </ProjectItem>
+        <MoreProjectsContainer data-aos="fade-right" data-aos-offset="400">
+          Looking for more? <br /> Check out my GitHub!
+          <img
+            src="./img/techicons/github-orange.png"
+            width={60}
+            alt="Github logo"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            onClick={() => openInNewTab("https://github.com/luisdudamel")}
+          />
+        </MoreProjectsContainer>
+      </ProjectsContainer>
     </ProjectsStyled>
   );
 };
