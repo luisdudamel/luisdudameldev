@@ -20,7 +20,10 @@ const Navbar = (): JSX.Element => {
           Contact
         </Link>
       </StyledNavlinkContainer>{" "}
-      <Button text="Resume"></Button>
+      <Button
+        url={process.env.REACT_APP_CV_URL as string}
+        text="Resume"
+      ></Button>
     </StyledNavbarContainer>
   );
 };

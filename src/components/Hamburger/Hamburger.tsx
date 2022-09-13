@@ -67,7 +67,7 @@ const Hamburger = (): JSX.Element => {
               </Link>
             </li>
           </ul>
-          <Button text="RESUME" />
+          <Button url={process.env.REACT_APP_CV_URL as string} text="RESUME" />
         </div>
       </div>
     </HamburgerStyled>
