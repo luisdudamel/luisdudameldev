@@ -37,8 +37,9 @@ const Main = (): JSX.Element => {
         <GoToTopStyled onClick={scrollToTop}>
           <img
             className={scrollVisible ? "scrolled" : ""}
-            src="./img/uparrow.png"
+            src="./img/up-arrow.svg"
             width={20}
+            height={20}
             alt="Go to top arrow"
           />
         </GoToTopStyled>

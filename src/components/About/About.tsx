@@ -68,8 +68,9 @@ const About = (): JSX.Element => {
               <AboutEducationItem data-aos="fade-right" data-aos-offset="200">
                 <img
                   alt="Graduation hat icon"
-                  height={50}
-                  src="/img/graduation-hat.png"
+                  width={48}
+                  height={36}
+                  src="/img/graduation-hat.webp"
                 ></img>
                 <AboutEducationSchoolSection>
                   <AboutEducationTitle>
@@ -83,8 +84,9 @@ const About = (): JSX.Element => {
               <AboutEducationItem data-aos="fade-right" data-aos-offset="300">
                 <img
                   alt="Graduation hat icon"
-                  height={50}
-                  src="/img/graduation-hat.png"
+                  width={48}
+                  height={36}
+                  src="/img/graduation-hat.webp"
                 ></img>
                 <AboutEducationSchoolSection>
                   <AboutEducationTitle>
@@ -103,9 +105,10 @@ const About = (): JSX.Element => {
                   return (
                     <AboutStackIcon
                       key={stack}
-                      height={60}
+                      height={70}
+                      width={70}
                       alt={`${stack} logo`}
-                      src={`./img/techicons/${stack}-logo.png`}
+                      src={`./img/techicons/${stack}.svg`}
                       data-aos="zoom-in"
                       data-aos-offset="300"
                     ></AboutStackIcon>
