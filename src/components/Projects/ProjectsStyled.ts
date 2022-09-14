@@ -70,7 +70,6 @@ export const ProjectItemContainer = styled.div`
 
     @media (min-width: 900px) {
       display: inline;
-      padding-right: 30px;
     }
   }
   img:nth-child(3) {

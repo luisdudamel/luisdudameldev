@@ -38,21 +38,21 @@ const Projects = (): JSX.Element => {
           <ProjectItemContainer>
             <div>
               <ProjectItemContainerImage
-                height={300}
+                height={297}
                 alt="Mobile phone showing barkedin app"
                 data-aos="fade-right"
                 data-aos-offset="600"
                 src="./img/projects/dog-list.webp"
               ></ProjectItemContainerImage>
               <ProjectItemContainerImage
-                height={300}
+                height={297}
                 alt="Mobile phone showing barkedin app"
                 data-aos="fade-right"
                 data-aos-offset="600"
                 src="./img/projects/edit-profile.webp"
               ></ProjectItemContainerImage>
               <ProjectItemContainerImage
-                height={300}
+                height={297}
                 alt="Mobile phone showing barkedin app"
                 data-aos="fade-right"
                 data-aos-offset="600"

@@ -29,13 +29,17 @@ const Hamburger = (): JSX.Element => {
 
   return (
     <HamburgerStyled>
+      <label htmlFor="hamburger-menu"></label>
       <input
         onClick={hidOverflow}
         type="checkbox"
         checked={modalOpen}
         className="toggler"
+        id="hamburger-menu"
+        name="hamburger-menu"
         readOnly
       />
+
       <div className="hamburger">
         <div className="hamburger_bread"></div>
         <div className="hamburger_meat"></div>
