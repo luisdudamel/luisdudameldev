@@ -103,7 +103,7 @@ export const ProjectItem = styled.div`
     margin-top: 0px;
   }
 
-  h4 {
+  h3 {
     color: var(--orange);
     font-size: 1.5rem;
     font-family: var(--common-font);

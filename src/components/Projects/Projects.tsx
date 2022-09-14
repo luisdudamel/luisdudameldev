@@ -64,7 +64,7 @@ const Projects = (): JSX.Element => {
               data-aos="fade-right"
               data-aos-offset="600"
             >
-              <h4>BarkedIn</h4>
+              <h3>BarkedIn</h3>
               <ProjectItemDescription>
                 Social network for dogs. <br /> CRUD SPA built with React +
                 Typescript.
