@@ -70,7 +70,6 @@ export const ProjectItemContainer = styled.div`
 
     @media (min-width: 900px) {
       display: inline;
-      padding-right: 30px;
     }
   }
   img:nth-child(3) {
@@ -104,7 +103,7 @@ export const ProjectItem = styled.div`
     margin-top: 0px;
   }
 
-  h4 {
+  h3 {
     color: var(--orange);
     font-size: 1.5rem;
     font-family: var(--common-font);
