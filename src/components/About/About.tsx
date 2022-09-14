@@ -51,8 +51,10 @@ const About = (): JSX.Element => {
             </AboutArticle>
             <ArticleFigureMobile data-aos="zoom-out" data-aos-offset="300">
               <AboutPicture
+                width={200}
+                height={238}
                 alt="Luis Dudamel headshot"
-                src="/img/luis-pic2.webp"
+                src="/img/luis-mobile.webp"
               ></AboutPicture>
               <figcaption
                 data-aos="zoom-out"
@@ -115,8 +117,10 @@ const About = (): JSX.Element => {
           <div>
             <ArticleFigureDesktop data-aos="zoom-out" data-aos-offset="300">
               <AboutPicture
+                height={416}
+                width={350}
                 alt="Luis Dudamel headshot"
-                src="/img/luis-pic2.webp"
+                src="/img/luis-desktop.webp"
               ></AboutPicture>
               <figcaption
                 data-aos="zoom-out"
