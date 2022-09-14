@@ -34,8 +34,9 @@ const Contact = (): JSX.Element => {
       </ContactButton>
       <ContactIconsContainer>
         <img
-          src="./img/techicons/linkedin-logo.png"
-          width={50}
+          src="./img/techicons/linkedin-logo.svg"
+          width={70}
+          height={57}
           alt="Linkedin logo"
           data-aos="zoom-in"
           data-aos-delay="300"
@@ -44,8 +45,9 @@ const Contact = (): JSX.Element => {
           }
         />
         <img
-          src="./img/techicons/twitter-logo.png"
-          width={50}
+          src="./img/techicons/twitter-logo.svg"
+          width={70}
+          height={57}
           alt="Twitter logo"
           data-aos="zoom-in"
           data-aos-delay="300"

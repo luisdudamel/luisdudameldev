@@ -10,9 +10,11 @@
   --common-font: "Poppins";
   --square-font: "Quantico";
 }
+
 body {
   margin: 0;
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, sans-serif;
+  display: swap;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

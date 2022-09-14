@@ -42,21 +42,21 @@ const Projects = (): JSX.Element => {
                 alt="Mobile phone showing barkedin app"
                 data-aos="fade-right"
                 data-aos-offset="600"
-                src="./img/projects/dog-list.png"
+                src="./img/projects/dog-list.webp"
               ></ProjectItemContainerImage>
               <ProjectItemContainerImage
                 height={300}
                 alt="Mobile phone showing barkedin app"
                 data-aos="fade-right"
                 data-aos-offset="600"
-                src="./img/projects/edit-profile.png"
+                src="./img/projects/edit-profile.webp"
               ></ProjectItemContainerImage>
               <ProjectItemContainerImage
                 height={300}
                 alt="Mobile phone showing barkedin app"
                 data-aos="fade-right"
                 data-aos-offset="600"
-                src="./img/projects/meeting-detail.png"
+                src="./img/projects/meeting-detail.webp"
               ></ProjectItemContainerImage>
             </div>
 
@@ -78,8 +78,9 @@ const Projects = (): JSX.Element => {
               </ProjectItemDescription>
               <div className="tech-icons-container">
                 <img
-                  src="./img/techicons/github-orange.png"
-                  height={40}
+                  src="./img/techicons/github-orange.svg"
+                  height={60}
+                  width={60}
                   alt="Github logo"
                   data-aos="zoom-in"
                   data-aos-offset="300"
@@ -91,8 +92,9 @@ const Projects = (): JSX.Element => {
                 />
 
                 <img
-                  src="./img/techicons/web-orange.png"
-                  height={40}
+                  src="./img/techicons/web-orange.svg"
+                  height={60}
+                  width={60}
                   alt="Website logo"
                   data-aos="zoom-in"
                   data-aos-offset="300"
@@ -107,8 +109,9 @@ const Projects = (): JSX.Element => {
         <MoreProjectsContainer data-aos="fade-right" data-aos-offset="400">
           Looking for more? <br /> Check out my GitHub!
           <img
-            src="./img/techicons/github-orange.png"
+            src="./img/techicons/github-orange.svg"
             width={60}
+            height={60}
             alt="Github logo"
             data-aos="fade-right"
             data-aos-offset="300"

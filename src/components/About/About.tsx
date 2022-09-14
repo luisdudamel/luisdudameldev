@@ -51,8 +51,10 @@ const About = (): JSX.Element => {
             </AboutArticle>
             <ArticleFigureMobile data-aos="zoom-out" data-aos-offset="300">
               <AboutPicture
+                width={200}
+                height={238}
                 alt="Luis Dudamel headshot"
-                src="/img/luis-pic2.webp"
+                src="/img/luis-mobile.webp"
               ></AboutPicture>
               <figcaption
                 data-aos="zoom-out"
@@ -66,8 +68,9 @@ const About = (): JSX.Element => {
               <AboutEducationItem data-aos="fade-right" data-aos-offset="200">
                 <img
                   alt="Graduation hat icon"
-                  height={50}
-                  src="/img/graduation-hat.png"
+                  width={48}
+                  height={36}
+                  src="/img/graduation-hat.webp"
                 ></img>
                 <AboutEducationSchoolSection>
                   <AboutEducationTitle>
@@ -81,8 +84,9 @@ const About = (): JSX.Element => {
               <AboutEducationItem data-aos="fade-right" data-aos-offset="300">
                 <img
                   alt="Graduation hat icon"
-                  height={50}
-                  src="/img/graduation-hat.png"
+                  width={48}
+                  height={36}
+                  src="/img/graduation-hat.webp"
                 ></img>
                 <AboutEducationSchoolSection>
                   <AboutEducationTitle>
@@ -101,9 +105,10 @@ const About = (): JSX.Element => {
                   return (
                     <AboutStackIcon
                       key={stack}
-                      height={60}
+                      height={70}
+                      width={70}
                       alt={`${stack} logo`}
-                      src={`./img/techicons/${stack}-logo.png`}
+                      src={`./img/techicons/${stack}.svg`}
                       data-aos="zoom-in"
                       data-aos-offset="300"
                     ></AboutStackIcon>
@@ -115,8 +120,10 @@ const About = (): JSX.Element => {
           <div>
             <ArticleFigureDesktop data-aos="zoom-out" data-aos-offset="300">
               <AboutPicture
+                height={416}
+                width={350}
                 alt="Luis Dudamel headshot"
-                src="/img/luis-pic2.webp"
+                src="/img/luis-desktop.webp"
               ></AboutPicture>
               <figcaption
                 data-aos="zoom-out"
