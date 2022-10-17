@@ -1,4 +1,16 @@
-export const dark = {
+interface theme {
+  name: string;
+  colors: {
+    orange: string;
+    lightblue: string;
+    darkblue: string;
+    midblue: string;
+    dark: string;
+    white: string;
+  };
+}
+
+export const dark: theme = {
   name: "dark-theme",
   colors: {
     orange: "#ec7955",

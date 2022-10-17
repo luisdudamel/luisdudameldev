@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import * as theme from "../../styles/Theme.styled";
 
 export const ProjectsStyled = styled.section`
-  background-color: var(--dark);
+  background-color: ${({ theme }) => theme.colors.dark};
   min-height: 100vh;
   width: 100vw;
   display: flex;
@@ -33,7 +34,7 @@ export const ProjectsTitle = styled.h2`
   font-family: var(--common-font);
   padding-top: 10px;
   text-align: center;
-  color: var(--lightblue);
+  color: ${({ theme }) => theme.colors.lightblue};
   font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 0;
@@ -104,7 +105,7 @@ export const ProjectItem = styled.div`
   }
 
   h3 {
-    color: var(--orange);
+    color: ${({ theme }) => theme.colors.orange};
     font-size: 1.5rem;
     font-family: var(--common-font);
     margin-bottom: 0;
@@ -146,7 +147,7 @@ export const ProjectDescriptionContainer = styled.div`
 `;
 
 export const ProjectItemDescription = styled.p`
-  color: white;
+  color: ${({ theme }) => theme.colors.white};
   margin-top: 0px;
   font-family: var(--common-font);
   line-height: 1.2rem;
@@ -167,7 +168,7 @@ export const MoreProjectsContainer = styled.div`
   font-family: var(--common-font);
   padding-top: 10px;
   text-align: center;
-  color: var(--lightblue);
+  color: ${({ theme }) => theme.colors.lightblue};
   font-size: 1.6rem;
   font-weight: 600;
   margin-bottom: 0;
