@@ -3,7 +3,7 @@ import styled from "styled-components";
 import * as theme from "../../styles/Theme.styled";
 
 export const AboutStyled = styled.section`
-  background-color: ${({ theme }) => theme.colors.white};
+  background-color: ${({ theme }) => theme.colors.oddSection};
   min-height: 100vh;
   width: 100%;
   display: flex;
@@ -54,7 +54,7 @@ export const AboutContainer = styled.div`
 export const AboutTitle = styled.h2`
   font-family: var(--common-font);
   text-align: center;
-  color: ${({ theme }) => theme.colors.darkblue};
+  color: ${({ theme }) => theme.colors.mainBackground};
   font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 0;
@@ -71,7 +71,7 @@ export const AboutTitle = styled.h2`
 
 export const AboutArticle = styled.p`
   text-align: left;
-  color: ${({ theme }) => theme.colors.dark};
+  color: ${({ theme }) => theme.colors.main};
   font-weight: 400;
   font-size: 1rem;
   line-height: 23px;
@@ -85,14 +85,14 @@ export const AboutArticle = styled.p`
 `;
 
 export const ArticleHighlight = styled.span`
-  color: ${({ theme }) => theme.colors.darkblue};
+  color: ${({ theme }) => theme.colors.mainBackground};
 `;
 
 export const ArticleFigureMobile = styled.figure`
   text-align: center;
   font-family: var(--common-font);
   font-size: 0.7rem;
-  color: ${({ theme }) => theme.colors.darkblue};
+  color: ${({ theme }) => theme.colors.mainBackground};
   @media (min-width: 900px) {
     display: none;
   }
@@ -102,7 +102,7 @@ export const ArticleFigureDesktop = styled.figure`
   text-align: center;
   font-family: var(--common-font);
   font-size: 0.7rem;
-  color: ${({ theme }) => theme.colors.darkblue};
+  color: ${({ theme }) => theme.colors.mainBackground};
   display: none;
   @media (min-width: 900px) {
     display: block;
@@ -144,7 +144,7 @@ export const AboutEducationTitle = styled.p`
   font-size: 0.9rem;
   font-weight: 600;
   font-family: var(--common-font);
-  color: ${({ theme }) => theme.colors.orange};
+  color: ${({ theme }) => theme.colors.accent};
   margin-bottom: 0;
   line-height: 10px;
   @media (min-width: 900px) {
@@ -160,6 +160,7 @@ export const AboutEducationSchool = styled.p`
   margin-top: 0;
   font-size: 1rem;
   font-family: var(--common-font);
+  color: ${({ theme }) => theme.colors.main};
   @media (min-width: 900px) {
     font-size: 1.3rem;
   }
@@ -169,6 +170,7 @@ export const AboutEducationSchool = styled.p`
 `;
 
 export const AboutStackTitle = styled.h3`
+  color: ${({ theme }) => theme.colors.mainBackground};
   font-family: var(--common-font);
   text-align: center;
   font-size: 1.4rem;

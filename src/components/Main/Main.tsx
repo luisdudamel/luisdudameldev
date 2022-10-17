@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ThemeProvider } from "styled-components";
-import { dark } from "../../styles/Theme.styled";
+import { dark, light } from "../../styles/Theme.styled";
 
 import About from "../About/About";
 

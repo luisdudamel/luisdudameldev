@@ -4,9 +4,9 @@ import * as theme from "../../styles/Theme.styled";
 
 export const StyledNavbarContainer = styled.div`
   position: absolute;
-  background-color: ${({ theme }) => theme.colors.dark};
+  background-color: ${({ theme }) => theme.colors.main};
   border: 0px;
-  color: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme.colors.navbarText};
   width: 100%;
   display: flex;
   justify-content: flex-end;

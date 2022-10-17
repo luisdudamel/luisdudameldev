@@ -1,7 +1,9 @@
 import styled from "styled-components";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import * as theme from "../../styles/Theme.styled";
 
 export const ContactStyled = styled.section`
-  background-color: white;
+  background-color: ${({ theme }) => theme.colors.oddSection};
   min-height: 100vh;
   width: 100%;
   display: flex;
@@ -19,7 +21,7 @@ export const ContactStyled = styled.section`
 export const ContactTitle = styled.h2`
   font-family: var(--common-font);
   text-align: center;
-  color: var(--darkblue);
+  color: ${({ theme }) => theme.colors.mainBackground};
   font-size: 1.8rem;
   margin-top: 60px;
   font-weight: 600;
@@ -37,7 +39,7 @@ export const ContactTitle = styled.h2`
 
 export const ContactArticle = styled.p`
   text-align: center;
-  color: var(--dark);
+  color: ${({ theme }) => theme.colors.main};
   font-weight: 400;
   font-size: 1.4rem;
   font-family: var(--common-font);
@@ -70,20 +72,20 @@ export const ContactIconsContainer = styled.div`
 `;
 
 export const ContactButton = styled.button`
-  background-color: var(--orange);
+  background-color: ${({ theme }) => theme.colors.accent};
   border: none;
   height: 40px;
   font-size: 1.2rem;
   border-radius: 20px;
-  color: white;
+  color: ${({ theme }) => theme.colors.white};
   padding-left: 1.2rem;
   padding-right: 1.2rem;
   cursor: pointer;
 
   :hover {
     background-color: white;
-    color: var(--orange);
-    border: solid 1px var(--orange);
+    color: ${({ theme }) => theme.colors.accent};
+    border: solid 1px ${({ theme }) => theme.colors.accent};
   }
   @media (min-width: 900px) {
     font-size: 2rem;
@@ -94,13 +96,14 @@ export const ContactButton = styled.button`
 export const StyledFooter = styled.p`
   font-size: 0.7rem;
   transition: all 0.2s;
+  color: ${({ theme }) => theme.colors.mainBackground};
 
   span {
-    color: var(--orange);
+    color: ${({ theme }) => theme.colors.accent};
     cursor: pointer;
 
     :hover {
-      color: var(--midblue);
+      color: ${({ theme }) => theme.colors.decorationBackground};
       transition: all 0.2s;
     }
   }
