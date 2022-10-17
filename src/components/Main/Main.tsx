@@ -1,4 +1,7 @@
 import { useState } from "react";
+import { ThemeProvider } from "styled-components";
+import { dark } from "../../styles/Theme.styled";
+
 import About from "../About/About";
 
 import Contact from "../Contact/Contact";
@@ -30,24 +33,26 @@ const Main = (): JSX.Element => {
   window.addEventListener("scroll", toggleVisible);
   return (
     <>
-      {" "}
-      <Hamburger />
-      <Navbar />
-      <MainStyled>
-        <GoToTopStyled onClick={scrollToTop}>
-          <img
-            className={scrollVisible ? "scrolled" : ""}
-            src="./img/up-arrow.svg"
-            width={20}
-            height={20}
-            alt="Go to top arrow"
-          />
-        </GoToTopStyled>
-        <Hero />
-        <About />
-        <Projects />
-        <Contact />
-      </MainStyled>
+      <ThemeProvider theme={dark}>
+        {" "}
+        <Hamburger />
+        <Navbar />
+        <MainStyled>
+          <GoToTopStyled onClick={scrollToTop}>
+            <img
+              className={scrollVisible ? "scrolled" : ""}
+              src="./img/up-arrow.svg"
+              width={20}
+              height={20}
+              alt="Go to top arrow"
+            />
+          </GoToTopStyled>
+          <Hero />
+          <About />
+          <Projects />
+          <Contact />
+        </MainStyled>
+      </ThemeProvider>
     </>
   );
 };

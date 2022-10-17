@@ -1,4 +1,6 @@
 import styled from "styled-components";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import * as theme from "../../styles/Theme.styled";
 
 export const HeroStyled = styled.section`
   padding: 0px 30px;
@@ -8,11 +10,11 @@ export const HeroStyled = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--dark);
+  background-color: ${({ theme }) => theme.colors.dark};
 `;
 
 export const HeroName = styled.h1`
-  color: var(--lightblue);
+  color: ${({ theme }) => theme.colors.lightblue};
   font-family: var(--common-font);
   font-size: 2.8rem;
   margin: 0px;
