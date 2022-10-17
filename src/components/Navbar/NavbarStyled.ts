@@ -52,14 +52,39 @@ export const StyledSwitchContainer = styled.div`
   height: 25px;
   width: 45px;
   border-radius: 20px;
+
+  .switch__toggler {
+    cursor: pointer;
+    z-index: 6;
+    height: 25px;
+    width: 15px;
+    position: absolute;
+    opacity: 0;
+    margin-left: 3px;
+  }
+
+  .switch__toggler:checked {
+    cursor: pointer;
+    z-index: 6;
+    height: 25px;
+    width: 15px;
+    position: absolute;
+    opacity: 0;
+    margin-left: 23px;
+
+    + div {
+      margin-left: 20px;
+    }
+  }
 `;
 
 export const StyledSwitch = styled.div`
   cursor: pointer;
-  background-color: var(--dark);
-  border: solid 2px white;
+  background-color: var(--lightblue);
+  border: solid 2px var(--lightblue);
   height: 19px;
   width: 19px;
   margin-left: 2px;
   border-radius: 20px;
+  transition: all 0.3s;
 `;

@@ -11,7 +11,15 @@ const Navbar = (): JSX.Element => {
   return (
     <StyledNavbarContainer>
       <StyledSwitchContainer>
-        <StyledSwitch></StyledSwitch>
+        <label htmlFor="hamburger-menu"></label>
+        <input
+          type="checkbox"
+          className="switch__toggler"
+          id="hamburger-menu"
+          name="hamburger-menu"
+          readOnly
+        />
+        <StyledSwitch />
       </StyledSwitchContainer>
       <StyledNavlinkContainer>
         <Link duration={500} smooth={true} to="about">
