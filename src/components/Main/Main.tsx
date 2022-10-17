@@ -13,6 +13,11 @@ import { GoToTopStyled, MainStyled } from "./MainStyled";
 
 const Main = (): JSX.Element => {
   const [scrollVisible, setScrollVisible] = useState(false);
+  const [isDarkTheme, setIsDarkTheme] = useState(true);
+
+  const switchTheme = () => {
+    setIsDarkTheme(!isDarkTheme);
+  };
 
   const toggleVisible = () => {
     const scrolled = document.documentElement.scrollTop;
@@ -33,10 +38,10 @@ const Main = (): JSX.Element => {
   window.addEventListener("scroll", toggleVisible);
   return (
     <>
-      <ThemeProvider theme={dark}>
+      <ThemeProvider theme={isDarkTheme ? dark : light}>
         {" "}
         <Hamburger />
-        <Navbar />
+        <Navbar themeAction={switchTheme} />
         <MainStyled>
           <GoToTopStyled onClick={scrollToTop}>
             <img

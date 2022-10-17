@@ -7,12 +7,17 @@ import {
   StyledSwitchContainer,
 } from "./NavbarStyled";
 
-const Navbar = (): JSX.Element => {
+interface NavbarProps {
+  themeAction: () => void;
+}
+
+const Navbar = ({ themeAction }: NavbarProps): JSX.Element => {
   return (
     <StyledNavbarContainer>
       <StyledSwitchContainer>
         <label htmlFor="hamburger-menu"></label>
         <input
+          onClick={themeAction}
           type="checkbox"
           className="switch__toggler"
           id="hamburger-menu"
