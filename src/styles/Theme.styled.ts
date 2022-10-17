@@ -6,6 +6,7 @@ export const dark = {
     darkblue: "#3d5a80",
     midblue: "#98c1d9",
     dark: "#293241",
+    white: "#ffffff",
   },
 };
 

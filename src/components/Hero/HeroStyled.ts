@@ -41,12 +41,12 @@ export const HeroName = styled.h1`
 `;
 
 export const HeroDot = styled.span`
-  color: var(--orange);
+  color: ${({ theme }) => theme.colors.orange};
 `;
 
 export const HeroSubhead = styled.p`
   font-family: var(--common-font);
-  color: var(--orange);
+  color: ${({ theme }) => theme.colors.orange};
   font-weight: 500;
   margin: 0px;
 
@@ -67,7 +67,7 @@ export const HeroSubhead = styled.p`
 `;
 
 export const HeroTitle = styled.h2`
-  color: white;
+  color: ${({ theme }) => theme.colors.white};
   font-family: var(--square-font);
   font-size: 2.3rem;
   font-weight: 400;
@@ -93,7 +93,7 @@ export const HeroTitle = styled.h2`
 
 export const HeroText = styled.p`
   font-family: var(--common-font);
-  color: var(--orange);
+  color: ${({ theme }) => theme.colors.orange};
   font-weight: 500;
 
   @media (min-width: 700px) {

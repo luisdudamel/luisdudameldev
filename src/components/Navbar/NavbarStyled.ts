@@ -1,10 +1,12 @@
 import styled from "styled-components";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import * as theme from "../../styles/Theme.styled";
 
 export const StyledNavbarContainer = styled.div`
   position: absolute;
-  background-color: var(--dark);
+  background-color: ${({ theme }) => theme.colors.dark};
   border: 0px;
-  color: white;
+  color: ${({ theme }) => theme.colors.white};
   width: 100%;
   display: flex;
   justify-content: flex-end;
