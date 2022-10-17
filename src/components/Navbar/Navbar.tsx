@@ -1,10 +1,31 @@
 import { Link } from "react-scroll";
 import Button from "../Button/Button";
-import { StyledNavbarContainer, StyledNavlinkContainer } from "./NavbarStyled";
+import {
+  StyledNavbarContainer,
+  StyledNavlinkContainer,
+  StyledSwitch,
+  StyledSwitchContainer,
+} from "./NavbarStyled";
 
-const Navbar = (): JSX.Element => {
+interface NavbarProps {
+  themeAction: () => void;
+}
+
+const Navbar = ({ themeAction }: NavbarProps): JSX.Element => {
   return (
     <StyledNavbarContainer>
+      <StyledSwitchContainer>
+        <label htmlFor="hamburger-menu"></label>
+        <input
+          onClick={themeAction}
+          type="checkbox"
+          className="switch__toggler"
+          id="hamburger-menu"
+          name="hamburger-menu"
+          readOnly
+        />
+        <StyledSwitch />
+      </StyledSwitchContainer>
       <StyledNavlinkContainer>
         <Link duration={500} smooth={true} to="about">
           About

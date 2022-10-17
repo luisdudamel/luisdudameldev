@@ -1,4 +1,7 @@
 import { useState } from "react";
+import { ThemeProvider } from "styled-components";
+import { dark, light } from "../../styles/Theme.styled";
+
 import About from "../About/About";
 
 import Contact from "../Contact/Contact";
@@ -10,6 +13,11 @@ import { GoToTopStyled, MainStyled } from "./MainStyled";
 
 const Main = (): JSX.Element => {
   const [scrollVisible, setScrollVisible] = useState(false);
+  const [isDarkTheme, setIsDarkTheme] = useState(true);
+
+  const switchTheme = () => {
+    setIsDarkTheme(!isDarkTheme);
+  };
 
   const toggleVisible = () => {
     const scrolled = document.documentElement.scrollTop;
@@ -30,24 +38,26 @@ const Main = (): JSX.Element => {
   window.addEventListener("scroll", toggleVisible);
   return (
     <>
-      {" "}
-      <Hamburger />
-      <Navbar />
-      <MainStyled>
-        <GoToTopStyled onClick={scrollToTop}>
-          <img
-            className={scrollVisible ? "scrolled" : ""}
-            src="./img/up-arrow.svg"
-            width={20}
-            height={20}
-            alt="Go to top arrow"
-          />
-        </GoToTopStyled>
-        <Hero />
-        <About />
-        <Projects />
-        <Contact />
-      </MainStyled>
+      <ThemeProvider theme={isDarkTheme ? dark : light}>
+        {" "}
+        <Hamburger />
+        <Navbar themeAction={switchTheme} />
+        <MainStyled>
+          <GoToTopStyled onClick={scrollToTop}>
+            <img
+              className={scrollVisible ? "scrolled" : ""}
+              src="./img/up-arrow.svg"
+              width={20}
+              height={20}
+              alt="Go to top arrow"
+            />
+          </GoToTopStyled>
+          <Hero theme={isDarkTheme} />
+          <About />
+          <Projects />
+          <Contact />
+        </MainStyled>
+      </ThemeProvider>
     </>
   );
 };
