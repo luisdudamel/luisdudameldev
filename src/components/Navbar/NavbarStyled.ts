@@ -43,3 +43,23 @@ export const StyledNavlinkContainer = styled.div`
     background-size: 100% 2px;
   }
 `;
+
+export const StyledSwitchContainer = styled.div`
+  display: flex;
+  align-items: center;
+  background-color: var(--dark);
+  border: solid 2px white;
+  height: 25px;
+  width: 45px;
+  border-radius: 20px;
+`;
+
+export const StyledSwitch = styled.div`
+  cursor: pointer;
+  background-color: var(--dark);
+  border: solid 2px white;
+  height: 19px;
+  width: 19px;
+  margin-left: 2px;
+  border-radius: 20px;
+`;

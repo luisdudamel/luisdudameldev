@@ -1,10 +1,18 @@
 import { Link } from "react-scroll";
 import Button from "../Button/Button";
-import { StyledNavbarContainer, StyledNavlinkContainer } from "./NavbarStyled";
+import {
+  StyledNavbarContainer,
+  StyledNavlinkContainer,
+  StyledSwitch,
+  StyledSwitchContainer,
+} from "./NavbarStyled";
 
 const Navbar = (): JSX.Element => {
   return (
     <StyledNavbarContainer>
+      <StyledSwitchContainer>
+        <StyledSwitch></StyledSwitch>
+      </StyledSwitchContainer>
       <StyledNavlinkContainer>
         <Link duration={500} smooth={true} to="about">
           About
