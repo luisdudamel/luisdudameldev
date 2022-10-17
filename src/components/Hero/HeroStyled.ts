@@ -1,4 +1,6 @@
 import styled from "styled-components";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import * as theme from "../../styles/Theme.styled";
 
 export const HeroStyled = styled.section`
   padding: 0px 30px;
@@ -8,11 +10,11 @@ export const HeroStyled = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--dark);
+  background-color: ${({ theme }) => theme.colors.main};
 `;
 
 export const HeroName = styled.h1`
-  color: var(--lightblue);
+  color: ${({ theme }) => theme.colors.decoration};
   font-family: var(--common-font);
   font-size: 2.8rem;
   margin: 0px;
@@ -39,12 +41,12 @@ export const HeroName = styled.h1`
 `;
 
 export const HeroDot = styled.span`
-  color: var(--orange);
+  color: ${({ theme }) => theme.colors.accent};
 `;
 
 export const HeroSubhead = styled.p`
   font-family: var(--common-font);
-  color: var(--orange);
+  color: ${({ theme }) => theme.colors.accent};
   font-weight: 500;
   margin: 0px;
 
@@ -65,7 +67,7 @@ export const HeroSubhead = styled.p`
 `;
 
 export const HeroTitle = styled.h2`
-  color: white;
+  color: ${({ theme }) => theme.colors.subHeading};
   font-family: var(--square-font);
   font-size: 2.3rem;
   font-weight: 400;
@@ -91,7 +93,7 @@ export const HeroTitle = styled.h2`
 
 export const HeroText = styled.p`
   font-family: var(--common-font);
-  color: var(--orange);
+  color: ${({ theme }) => theme.colors.accent};
   font-weight: 500;
 
   @media (min-width: 700px) {

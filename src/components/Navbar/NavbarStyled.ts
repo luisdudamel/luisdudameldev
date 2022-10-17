@@ -1,10 +1,12 @@
 import styled from "styled-components";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import * as theme from "../../styles/Theme.styled";
 
 export const StyledNavbarContainer = styled.div`
   position: absolute;
-  background-color: var(--dark);
+  background-color: ${({ theme }) => theme.colors.main};
   border: 0px;
-  color: white;
+  color: ${({ theme }) => theme.colors.navbarText};
   width: 100%;
   display: flex;
   justify-content: flex-end;
@@ -40,4 +42,51 @@ export const StyledNavlinkContainer = styled.div`
   :focus {
     background-size: 100% 2px;
   }
+`;
+
+export const StyledSwitchContainer = styled.div`
+  display: flex;
+  align-items: center;
+  background-color: ${({ theme }) => theme.colors.main};
+  border: solid 2px ${({ theme }) => theme.colors.subHeading};
+  height: 25px;
+  width: 45px;
+  border-radius: 20px;
+
+  .switch__toggler {
+    cursor: pointer;
+    z-index: 6;
+    height: 25px;
+    width: 15px;
+    position: absolute;
+    opacity: 0;
+    margin-left: 3px;
+  }
+
+  .switch__toggler:checked {
+    cursor: pointer;
+    z-index: 6;
+    height: 25px;
+    width: 15px;
+    position: absolute;
+    opacity: 0;
+    margin-left: 23px;
+
+    + div {
+      margin-left: 20px;
+      background-color: ${({ theme }) => theme.colors.oddSection};
+      border: solid 2px ${({ theme }) => theme.colors.oddSection};
+    }
+  }
+`;
+
+export const StyledSwitch = styled.div`
+  cursor: pointer;
+  background-color: var(--lightblue);
+  border: solid 2px var(--lightblue);
+  height: 19px;
+  width: 19px;
+  margin-left: 2px;
+  border-radius: 20px;
+  transition: all 0.3s;
 `;
