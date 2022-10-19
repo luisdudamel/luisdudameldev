@@ -46,14 +46,14 @@ export const HamburgerStyled = styled.div`
       top: 0px;
       left: 0px;
       position: relative;
-      background-color: white;
+      background-color: ${({ theme }) => theme.colors.navbarText};
       height: 2px;
       width: 1.7em;
       margin-top: 6px;
       transition: all 0.4s;
     }
     &_meat {
-      background-color: white;
+      background-color: ${({ theme }) => theme.colors.navbarText};
       height: 2px;
       width: 1em;
       margin-top: 6px;
@@ -140,12 +140,14 @@ export const HamburgerStyled = styled.div`
       top: 10px;
       transform: rotate(45deg);
       transition: all 0.3s;
+      background-color: white;
     }
 
     div:nth-child(3) {
       top: -6px;
       transform: rotate(135deg);
       transition: all 0.5s;
+      background-color: white;
     }
   }
 `;
