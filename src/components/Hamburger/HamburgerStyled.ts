@@ -149,3 +149,56 @@ export const HamburgerStyled = styled.div`
     }
   }
 `;
+
+export const StyledMobileSwitchContainer = styled.div`
+  position: relative;
+  top: 4.8em;
+  margin-top: -47px;
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  background-color: ${({ theme }) => theme.colors.main};
+  border: solid 2px ${({ theme }) => theme.colors.subHeading};
+  height: 25px;
+  width: 45px;
+  border-radius: 20px;
+
+  .switch__toggler {
+    cursor: pointer;
+    z-index: 22;
+    height: 25px;
+    width: 15px;
+    position: absolute;
+    opacity: 0;
+    margin-left: 3px;
+  }
+
+  .switch__toggler:checked {
+    cursor: pointer;
+    z-index: 22;
+    height: 25px;
+    width: 15px;
+    position: absolute;
+    opacity: 0;
+    margin-left: 23px;
+
+    ~ div {
+      margin-left: 20px;
+      background-color: red;
+      background-color: ${({ theme }) => theme.colors.oddSection};
+      border: solid 2px ${({ theme }) => theme.colors.oddSection};
+    }
+  }
+`;
+
+export const StyledMobileSwitch = styled.div`
+  z-index: 6;
+  cursor: pointer;
+  background-color: var(--lightblue);
+  border: solid 2px var(--lightblue);
+  height: 19px;
+  width: 19px;
+  margin-left: 2px;
+  border-radius: 20px;
+  transition: all 0.3s;
+`;

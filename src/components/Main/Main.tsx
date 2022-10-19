@@ -40,7 +40,7 @@ const Main = (): JSX.Element => {
     <>
       <ThemeProvider theme={isDarkTheme ? dark : light}>
         {" "}
-        <Hamburger />
+        <Hamburger themeAction={switchTheme} />
         <Navbar themeAction={switchTheme} />
         <MainStyled>
           <GoToTopStyled onClick={scrollToTop}>
