@@ -15,13 +15,13 @@ const Navbar = ({ themeAction }: NavbarProps): JSX.Element => {
   return (
     <StyledNavbarContainer>
       <StyledSwitchContainer>
-        <label htmlFor="hamburger-menu"></label>
+        <label htmlFor="theme-switcher"></label>
         <input
           onClick={themeAction}
           type="checkbox"
           className="switch__toggler"
-          id="hamburger-menu"
-          name="hamburger-menu"
+          id="theme-switcher"
+          name="theme-switcher"
           readOnly
         />
         <StyledSwitch />
