@@ -35,7 +35,7 @@ const Hero = ({ theme }: HeroProps): JSX.Element => {
           I create stuff for the web
         </HeroTitle>
         <HeroText data-aos="fade-up" data-aos-delay="600">
-          I'm a software engineer, who loves to find new ways of solving
+          I'm a full stack web developer, who loves to find new ways of solving
           problems while building great digital experiences.
         </HeroText>
       </HeroStyled>
