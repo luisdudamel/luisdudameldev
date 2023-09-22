@@ -29,7 +29,7 @@ const Projects = (): JSX.Element => {
       <Element className="projects-element" name="projects">
         <div>
           <ProjectsTitle data-aos="fade-right" data-aos-offset="400">
-            Curently working on
+            Currently working on
           </ProjectsTitle>
         </div>
       </Element>
